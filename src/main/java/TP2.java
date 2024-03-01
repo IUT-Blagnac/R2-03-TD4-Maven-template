@@ -4,9 +4,11 @@ public class TP2 {
      * @author Alban-Moussa
      * 
      */
+
 	public static void main(String[] args) {
         Pile maPile = new Pile(10);
         Pile p = new Pile();
+        
         try {
         	if (!maPile.est_vide()) System.out.println("NOK1");
         	maPile.empiler(5);
