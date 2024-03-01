@@ -15,7 +15,10 @@
     <plugins>
      <plugin>
        <groupId>org.apache.maven.plugins</groupId>
-       <artifactId>maven-compiler-plugin</artifactId>
+       <artifactId>
+        maven-compiler-plugin
+        maven-javadoc-plugin
+       </artifactId>
         <version>3.8.1</version>
         <configuration>
             <source>1.8</source>
@@ -28,7 +31,8 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>HelloJava</mainClass>
+              <!-- Ca marche mieux quand la classe c'est la bonne... -->
+              <mainClass>TP2</mainClass>
             </manifest>
           </archive>
         </configuration>
